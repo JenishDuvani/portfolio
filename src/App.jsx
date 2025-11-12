@@ -443,7 +443,7 @@ export default function Portfolio() {
 
                <Section id="resume" title="Resume" subtitle="Grab a copy or request via email">
           <div className="flex flex-wrap items-center gap-3">
-            <a href="#" className="inline-flex items-center rounded-xl bg-gradient-to-r from-pink-500 to-fuchsia-600 px-4 py-2 text-sm font-medium text-white shadow hover:scale-[1.02] transition transform hover:-translate-y-0.5">
+            <a href="/resume.pdf" className="inline-flex items-center rounded-xl bg-gradient-to-r from-pink-500 to-fuchsia-600 px-4 py-2 text-sm font-medium text-white shadow hover:scale-[1.02] transition transform hover:-translate-y-0.5">
               <FiDownload className="mr-2" /> Download PDF
             </a>
             <a href={`mailto:${PROFILE.email}`} className="inline-flex items-center rounded-xl border border-white/10 bg-white/[0.06] px-4 py-2 text-sm text-zinc-100 transition transform hover:-translate-y-0.5">
@@ -452,36 +452,7 @@ export default function Portfolio() {
           </div>
         </Section>
 
-        <Section id="contact" title="Contact" subtitle="Send a message — wired for AWS later">
-          <form onSubmit={onSubmit} className="grid gap-4 md:grid-cols-2">
-            <Card style={{ ['--i']: 0 }}>
-              <label className="text-xs text-zinc-400">Name</label>
-              <input name="name" required className="mt-1 w-full rounded-lg border border-white/10 bg-black/40 px-3 py-2 text-sm outline-none focus:border-pink-500/50" />
-            </Card>
-            <Card style={{ ['--i']: 1 }}>
-              <label className="text-xs text-zinc-400">Email</label>
-              <input name="email" type="email" required className="mt-1 w-full rounded-lg border border-white/10 bg-black/40 px-3 py-2 text-sm outline-none focus:border-pink-500/50" />
-            </Card>
-            <Card style={{ ['--i']: 2 }} className="md:col-span-2">
-              <label className="text-xs text-zinc-400">Message</label>
-              <textarea name="message" rows={4} required className="mt-1 w-full resize-y rounded-lg border border-white/10 bg-black/40 px-3 py-2 text-sm outline-none focus:border-pink-500/50" />
-            </Card>
-            <div className="md:col-span-2">
-              <button className="inline-flex items-center rounded-xl bg-gradient-to-r from-pink-500 to-fuchsia-600 px-4 py-2 text-sm font-medium text-white shadow hover:scale-[1.02] transition transform hover:-translate-y-0.5">
-                Send
-              </button>
-              {/* <span className="ml-3 text-xs text-zinc-500">(Will integrate AWS API Gateway + Lambda + SES for free-tier email.)</span> */}
-            </div>
-          </form>
-          <div className="mt-6 flex gap-3">
-            <a href={PROFILE.socials.github} target="_blank" rel="noreferrer" className="rounded-xl border border-white/10 bg-white/[0.06] px-3 py-2 text-sm text-zinc-100 transition transform hover:-translate-y-0.5 hover:scale-105">
-              <FiGithub />
-            </a>
-            <a href={PROFILE.socials.linkedin} target="_blank" rel="noreferrer" className="rounded-xl border border-white/10 bg-white/[0.06] px-3 py-2 text-sm text-zinc-100 transition transform hover:-translate-y-0.5 hover:scale-105">
-              <FiLinkedin />
-            </a>
-          </div>
-        </Section>
+        
       </main>
 
       <footer className="mx-auto w-full max-w-6xl px-4 md:px-6 pb-10 text-center text-sm text-zinc-500">
