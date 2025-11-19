@@ -176,7 +176,7 @@ export default function Portfolio() {
   const [dark, setDark] = useState(true);
   const [active, setActive] = useState("home");
   const [mobileOpen, setMobileOpen] = useState(false);
-  const navIds = ["home", "about", "skills", "projects", "experience", "education", "certs", "blog", "resume", "contact"];
+  const navIds = ["home", "about", "skills", "projects", "experience", "education", "certs","resume", "contact"];
 
   useEffect(() => {
     try {
@@ -265,9 +265,9 @@ export default function Portfolio() {
           </ul>
 
           <div className="flex items-center gap-2">
-            <button onClick={() => setDark(!dark)} className="rounded-lg p-2 text-zinc-300 hover:bg-white/10 focus:outline-none focus:ring-2 focus:ring-pink-500 md:p-2 md:rounded-lg transition-transform transform hover:-translate-y-0.5 active:translate-y-0">
+            {/* <button onClick={() => setDark(!dark)} className="rounded-lg p-2 text-zinc-300 hover:bg-white/10 focus:outline-none focus:ring-2 focus:ring-pink-500 md:p-2 md:rounded-lg transition-transform transform hover:-translate-y-0.5 active:translate-y-0">
               {dark ? <FiSun className="transition-transform animate-bob-slow" /> : <FiMoon className="transition-transform animate-bob-slow" />}
-            </button>
+            </button> */}
 
             <button onClick={() => setMobileOpen((s) => !s)} className="md:hidden rounded-lg p-2 text-zinc-300 hover:bg-white/10 focus:outline-none focus:ring-2 focus:ring-pink-500">
               <div className="space-y-1">
@@ -309,7 +309,7 @@ export default function Portfolio() {
 
       <main>
         <section id="home" className="reveal-section opacity-0 translate-y-4 mx-auto flex min-h-[68vh] w-full max-w-6xl flex-col items-center justify-center px-4 text-center">
-          <p className="mb-3 inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-3 py-1 text-xs text-zinc-300">
+          <p className="mt-9 mb-3 inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-3 py-1 text-xs text-zinc-300">
             <FiServer className="text-pink-400" /> Open to roles & freelance
           </p>
 

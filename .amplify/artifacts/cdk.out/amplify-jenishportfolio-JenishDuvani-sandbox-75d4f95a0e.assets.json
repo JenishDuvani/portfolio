@@ -1,0 +1,20 @@
+{
+  "version": "48.0.0",
+  "files": {
+    "8cad70ab8c34ecd9ecea0f0c2f22eedf9f7455bc975b9f701a58931abe1bfc3b": {
+      "displayName": "amplify-jenishportfolio-JenishDuvani-sandbox-75d4f95a0e Template",
+      "source": {
+        "path": "amplify-jenishportfolio-JenishDuvani-sandbox-75d4f95a0e.template.json",
+        "packaging": "file"
+      },
+      "destinations": {
+        "current_account-current_region-e4382122": {
+          "bucketName": "cdk-hnb659fds-assets-${AWS::AccountId}-${AWS::Region}",
+          "objectKey": "8cad70ab8c34ecd9ecea0f0c2f22eedf9f7455bc975b9f701a58931abe1bfc3b.json",
+          "assumeRoleArn": "arn:${AWS::Partition}:iam::${AWS::AccountId}:role/cdk-hnb659fds-file-publishing-role-${AWS::AccountId}-${AWS::Region}"
+        }
+      }
+    }
+  },
+  "dockerImages": {}
+}
